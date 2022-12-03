@@ -1,0 +1,11 @@
+<form action="/users/signup" method="post">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" value="<%= params[:username] %>" name="username" />
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" value="" name="password" />
+    <button type="submit">Sign Up</button>
+  </div>
+</form>

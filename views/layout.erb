@@ -3,6 +3,11 @@
   <title>CMS</title>
   <link rel="stylesheet" href="/stylesheets/cms.css" type="text/css">
   <body>
+    <% if !@files %>
+      <div>
+        <p><a href="/">Homepage</a></p>
+      </div>
+    <% end %>
     <% if session[:message] %>
       <p class="message"><%= session.delete(:message) %></p>
     <% end %>
